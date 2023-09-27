@@ -1,0 +1,13 @@
+.heroContainer {
+  width: 79.75rem;
+  height: 46.0625rem;
+  margin-left: 1.5rem;
+  margin-right: 8.75rem;
+}
+
+.heroTitleContainer {
+  width: 61.125rem;
+  height: 46.0625rem;
+  background: linear-gradient(290deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%);
+  border-radius: 0rem 0rem 2.1875rem 2.1875rem;
+}

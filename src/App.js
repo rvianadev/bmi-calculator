@@ -1,12 +1,12 @@
-import Header from "./components/Header/index";
+import DesktopContainer from "./components/DesktopContainer/index";
+import Hero from "./components/Hero/index";
 import "./globals.css";
 
 function App() {
   return (
-    <main>
-      <Header rodrigo />
-      <Header />
-    </main>
+    <DesktopContainer>
+      <Hero></Hero>
+    </DesktopContainer>
   );
 }
 
