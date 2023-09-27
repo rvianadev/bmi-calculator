@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
 :root {
-  --rodrigo: #232323;
+  --blue: #345ff6;
+  --gun-metal: #253347;
+  --dark-electric-blue: #5e6e85;
+  --borders: #d8e2e7;
+  --pure-white: #ffffff;
 }
 
 * {
@@ -9,4 +15,47 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.heading-xl {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.heading-l {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.heading-m {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.heading-s {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.body-m {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.body-m-bold {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.body-s {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
