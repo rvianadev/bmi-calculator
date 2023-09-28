@@ -2,4 +2,5 @@
   max-width: 90rem;
   margin: 0 auto;
   background: var(--pure-white);
+  position: relative;
 }

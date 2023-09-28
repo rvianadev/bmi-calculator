@@ -1,0 +1,7 @@
+.mediumHeading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gun-metal);
+  line-height: 1.1;
+  font-style: normal;
+}

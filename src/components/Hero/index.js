@@ -1,3 +1,4 @@
+import MediumHeading from "../MediumHeading";
 import styles from "./styles.module.css";
 
 function Hero() {
@@ -16,6 +17,22 @@ function Hero() {
             fill="#B3D3F1"
           />
         </svg>
+        <div className={styles.heroContents}>
+          <h1 className="heading-xl">
+            Body Mass
+            <br /> Index Calculator
+          </h1>
+          <p className="body-m">
+            Better understand your weight in relation to your height using our
+            body mass index (BM) calculator. While BMI is not the sole
+            determinant of a healthy weight, it offers a valuable starting point
+            to evaluate your overall health and well-being.
+          </p>
+        </div>
+      </div>
+
+      <div className={styles.detailsContainer}>
+        <MediumHeading>Enter yours details below</MediumHeading>
       </div>
     </section>
   );
