@@ -11,3 +11,9 @@
   background: linear-gradient(290deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%);
   border-radius: 0rem 0rem 2.1875rem 2.1875rem;
 }
+
+.heroTitleContainer svg {
+  width: 4rem;
+  height: 4rem;
+  margin: 4.69rem 68.5rem 37.4rem 7.25rem;
+}
