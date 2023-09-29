@@ -43,6 +43,32 @@ function Hero() {
             <label className="body-m-bold">Imperial</label>
           </div>
         </div>
+
+        <div className={styles.dataContainer}>
+          <div className={styles.heightContainer}>
+            <label>Height</label>
+            <div className={styles.heightData}>
+              <input type="text" className="heading-m" placeholder="0" />
+              <span>cm</span>
+            </div>
+          </div>
+          <div className={styles.weightContainer}>
+            <label>Weight</label>
+            <div className={styles.weightData}>
+              <input type="text" className="heading-m" placeholder="0" />
+              <span>kg</span>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.resultContainer}>
+          <div className={styles.textResultContainer}>
+            <MediumHeading>Welcome!</MediumHeading>
+            <span>
+              Enter your height and weight and you’ll see your BMI result here
+            </span>
+          </div>
+        </div>
       </div>
     </section>
   );
