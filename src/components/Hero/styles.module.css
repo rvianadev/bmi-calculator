@@ -131,10 +131,20 @@
   letter-spacing: -0.075rem;
 }
 
+.heightData:focus-within,
+.weightData:focus-within {
+  border-color: #345ff6;
+}
+
 .heightData input,
 .weightData input {
   width: 8.1875rem;
   border: none;
+}
+
+.heightData input:focus,
+.weightData input:focus {
+  outline: none;
 }
 
 .heightData input::placeholder,
