@@ -33,6 +33,16 @@ function Hero() {
 
       <div className={styles.detailsContainer}>
         <MediumHeading>Enter yours details below</MediumHeading>
+        <div className={styles.systemContainer}>
+          <div className={styles.unitSystem}>
+            <input type="radio" name="system" checked />
+            <label className="body-m-bold">Metric</label>
+          </div>
+          <div className={styles.unitSystem}>
+            <input type="radio" name="system" />
+            <label className="body-m-bold">Imperial</label>
+          </div>
+        </div>
       </div>
     </section>
   );

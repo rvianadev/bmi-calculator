@@ -55,3 +55,25 @@
   background: var(--pure-white);
   box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
 }
+
+.systemContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+.unitSystem {
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+  flex: 1 0 0;
+}
+
+.unitSystem input {
+  width: 1.9375rem;
+  height: 1.9375rem;
+}
+
+.unitSystem label {
+}
