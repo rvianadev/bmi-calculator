@@ -73,6 +73,11 @@
 .unitSystem input {
   width: 1.9375rem;
   height: 1.9375rem;
+  cursor: pointer;
+}
+
+.unitSystem input:checked {
+  background: rgba(4, 38, 160, 0.85);
 }
 
 .unitSystem label {
