@@ -1,8 +1,16 @@
+import React, { useState } from "react";
+
 import MediumHeading from "../../ui/MediumHeading";
 import styles from "./styles.module.css";
 import image from "./assets/image.svg";
 
 function Hero() {
+  const [selectedSystem, setSelectedSystem] = useState("metric");
+  const handleSystemChange = (event) => {
+    setSelectedSystem(event.target.value);
+    console.log(selectedSystem);
+  };
+
   return (
     <section className={styles.heroContainer}>
       <div className={styles.heroTitleContainer}>
@@ -25,28 +33,67 @@ function Hero() {
         <MediumHeading>Enter yours details below</MediumHeading>
         <div className={styles.systemContainer}>
           <div className={styles.unitSystem}>
-            <input type="radio" name="system" checked />
+            <input
+              type="radio"
+              name="system"
+              value="metric"
+              onChange={handleSystemChange}
+            />
             <label className="body-m-bold">Metric</label>
           </div>
           <div className={styles.unitSystem}>
-            <input type="radio" name="system" />
+            <input
+              type="radio"
+              name="system"
+              value="imperial"
+              onChange={handleSystemChange}
+            />
             <label className="body-m-bold">Imperial</label>
           </div>
         </div>
 
-        <div className={styles.dataContainer}>
-          <div className={styles.heightContainer}>
+        <div className={styles.metricDataContainer}>
+          <div className={styles.dataGroup}>
             <label>Height</label>
-            <div className={styles.heightData}>
+            <div className={styles.inputGroup}>
               <input type="text" className="heading-m" placeholder="0" />
               <span>cm</span>
             </div>
           </div>
-          <div className={styles.weightContainer}>
+          <div className={styles.dataGroup}>
             <label>Weight</label>
-            <div className={styles.weightData}>
+            <div className={styles.inputGroup}>
               <input type="text" className="heading-m" placeholder="0" />
               <span>kg</span>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.imperialDataContainer}>
+          <div className={styles.dataGroup}>
+            <label>Height</label>
+            <div className={styles.inputGroup}>
+              <input type="text" className="heading-m" placeholder="0" />
+              <span>ft</span>
+            </div>
+          </div>
+          <div className={styles.dataGroup}>
+            <div className={styles.inputGroup}>
+              <input type="text" className="heading-m" placeholder="0" />
+              <span>in</span>
+            </div>
+          </div>
+          <div className={styles.dataGroup}>
+            <label>Weight</label>
+            <div className={styles.inputGroup}>
+              <input type="text" className="heading-m" placeholder="0" />
+              <span>st</span>
+            </div>
+          </div>
+          <div className={styles.dataGroup}>
+            <div className={styles.inputGroup}>
+              <input type="text" className="heading-m" placeholder="0" />
+              <span>lbs</span>
             </div>
           </div>
         </div>

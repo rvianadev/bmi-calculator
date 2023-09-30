@@ -81,15 +81,22 @@
   background: rgba(4, 38, 160, 0.85);
 }
 
-.dataContainer {
+.metricDataContainer {
   display: flex;
   align-items: flex-start;
   gap: 1.5rem;
   align-self: stretch;
 }
 
-.heightContainer,
-.weightContainer {
+.imperialDataContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+.dataGroup {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -97,8 +104,7 @@
   flex: 1 0 0;
 }
 
-.heightContainer label,
-.weightContainer label {
+.dataGroup label {
   color: var(--dark-electric-blue);
   line-height: 1.5;
   font-style: normal;
@@ -106,23 +112,21 @@
   font-weight: 400;
 }
 
-.heightData,
-.weightData {
+.inputGroup {
   display: flex;
   padding: 1.25rem 1.5rem;
   align-items: flex-start;
   gap: 1.5rem;
   align-self: stretch;
+  justify-content: space-between;
 
   border-radius: 0.75rem;
   border: 1px solid #d8e2e7;
   background: var(--pure-white);
 }
 
-.heightData input,
-.weightData input,
-.heightData span,
-.weightData span {
+.inputGroup input,
+.inputGroup span {
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
@@ -131,29 +135,24 @@
   letter-spacing: -0.075rem;
 }
 
-.heightData:focus-within,
-.weightData:focus-within {
+.inputGroup:focus-within {
   border-color: #345ff6;
 }
 
-.heightData input,
-.weightData input {
+.inputGroup input {
   width: 8.1875rem;
   border: none;
 }
 
-.heightData input:focus,
-.weightData input:focus {
+.inputGroup input:focus {
   outline: none;
 }
 
-.heightData input::placeholder,
-.weightData input::placeholder {
+.inputGroup input::placeholder {
   opacity: 0.25;
 }
 
-.heightData span,
-.weightData span {
+.inputGroup span {
   color: var(--blue);
 }
 
