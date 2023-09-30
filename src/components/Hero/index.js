@@ -6,9 +6,9 @@ import image from "./assets/image.svg";
 
 function Hero() {
   const [selectedSystem, setSelectedSystem] = useState("metric");
+
   const handleSystemChange = (event) => {
     setSelectedSystem(event.target.value);
-    console.log(selectedSystem);
   };
 
   return (
@@ -69,7 +69,10 @@ function Hero() {
           </div>
         </div>
 
-        <div className={styles.imperialDataContainer}>
+        <div
+          className={styles.imperialDataContainer}
+          style={{ display: "none" }}
+        >
           <div className={styles.dataGroup}>
             <label>Height</label>
             <div className={styles.inputGroup}>

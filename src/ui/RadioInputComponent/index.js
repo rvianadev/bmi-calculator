@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 function RadioInputComponent() {
   const [selectedOption, setSelectedOption] = useState("option1");
-  console.log(`Estado inicial ${selectedOption}`);
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
