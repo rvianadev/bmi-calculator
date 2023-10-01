@@ -5,6 +5,7 @@ function RadioInputComponent() {
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
+    console.log(selectedOption);
   };
 
   return (

@@ -52,54 +52,53 @@ function Hero() {
           </div>
         </div>
 
-        <div className={styles.metricDataContainer}>
-          <div className={styles.dataGroup}>
-            <label>Height</label>
-            <div className={styles.inputGroup}>
-              <input type="text" className="heading-m" placeholder="0" />
-              <span>cm</span>
+        {selectedSystem === "metric" ? (
+          <div className={styles.metricDataContainer}>
+            <div className={styles.dataGroup}>
+              <label>Height</label>
+              <div className={styles.inputGroup}>
+                <input type="text" className="heading-m" placeholder="0" />
+                <span>cm</span>
+              </div>
+            </div>
+            <div className={styles.dataGroup}>
+              <label>Weight</label>
+              <div className={styles.inputGroup}>
+                <input type="text" className="heading-m" placeholder="0" />
+                <span>kg</span>
+              </div>
             </div>
           </div>
-          <div className={styles.dataGroup}>
-            <label>Weight</label>
-            <div className={styles.inputGroup}>
-              <input type="text" className="heading-m" placeholder="0" />
-              <span>kg</span>
+        ) : (
+          <div className={styles.imperialDataContainer}>
+            <div className={styles.dataGroup}>
+              <label>Height</label>
+              <div className={styles.inputGroup}>
+                <input type="text" className="heading-m" placeholder="0" />
+                <span>ft</span>
+              </div>
+            </div>
+            <div className={styles.dataGroup}>
+              <div className={styles.inputGroup}>
+                <input type="text" className="heading-m" placeholder="0" />
+                <span>in</span>
+              </div>
+            </div>
+            <div className={styles.dataGroup}>
+              <label>Weight</label>
+              <div className={styles.inputGroup}>
+                <input type="text" className="heading-m" placeholder="0" />
+                <span>st</span>
+              </div>
+            </div>
+            <div className={styles.dataGroup}>
+              <div className={styles.inputGroup}>
+                <input type="text" className="heading-m" placeholder="0" />
+                <span>lbs</span>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div
-          className={styles.imperialDataContainer}
-          style={{ display: "none" }}
-        >
-          <div className={styles.dataGroup}>
-            <label>Height</label>
-            <div className={styles.inputGroup}>
-              <input type="text" className="heading-m" placeholder="0" />
-              <span>ft</span>
-            </div>
-          </div>
-          <div className={styles.dataGroup}>
-            <div className={styles.inputGroup}>
-              <input type="text" className="heading-m" placeholder="0" />
-              <span>in</span>
-            </div>
-          </div>
-          <div className={styles.dataGroup}>
-            <label>Weight</label>
-            <div className={styles.inputGroup}>
-              <input type="text" className="heading-m" placeholder="0" />
-              <span>st</span>
-            </div>
-          </div>
-          <div className={styles.dataGroup}>
-            <div className={styles.inputGroup}>
-              <input type="text" className="heading-m" placeholder="0" />
-              <span>lbs</span>
-            </div>
-          </div>
-        </div>
+        )}
 
         <div className={styles.resultContainer}>
           <div className={styles.textResultContainer}>
