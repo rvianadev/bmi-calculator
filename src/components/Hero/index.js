@@ -5,10 +5,10 @@ import styles from "./styles.module.css";
 import image from "./assets/image.svg";
 
 function Hero() {
-  const [selectedSystem, setSelectedSystem] = useState("metric");
+  let [selectedSystem, setSelectedSystem] = useState("metric");
 
   const handleSystemChange = (event) => {
-    setSelectedSystem(event.target.value);
+    setSelectedSystem((selectedSystem = event.target.value));
   };
 
   return (
