@@ -1,0 +1,21 @@
+.yourResultsContainer {
+  display: flex;
+  justify-content: space-between;
+
+  width: 72.5rem;
+  height: 33.3125rem;
+  margin: 4.06rem auto 6rem auto;
+}
+
+.yourResultsContainer img {
+  max-width: 35.25rem;
+}
+
+.resultTextContainer {
+  display: flex;
+  width: 29.0625rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.1875rem;
+  margin-top: 11.5rem;
+}

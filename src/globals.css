@@ -44,6 +44,7 @@ input {
 .heading-l {
   font-size: 3rem;
   font-weight: 600;
+  letter-spacing: -0.15rem;
 }
 
 .heading-s {
@@ -62,6 +63,7 @@ input {
 .body-m {
   font-size: 1rem;
   font-weight: 400;
+  color: var(--dark-electric-blue);
 }
 
 .body-m-bold {
