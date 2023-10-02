@@ -37,7 +37,8 @@ function Hero() {
               type="radio"
               name="system"
               value="metric"
-              onChange={handleSystemChange}
+              checked
+              onClick={handleSystemChange}
             />
             <label className="body-m-bold">Metric</label>
           </div>
@@ -46,7 +47,7 @@ function Hero() {
               type="radio"
               name="system"
               value="imperial"
-              onChange={handleSystemChange}
+              onClick={handleSystemChange}
             />
             <label className="body-m-bold">Imperial</label>
           </div>
