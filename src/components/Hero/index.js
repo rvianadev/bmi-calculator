@@ -5,10 +5,10 @@ import styles from "./styles.module.css";
 import image from "./assets/image.svg";
 
 function Hero() {
-  let [selectedSystem, setSelectedSystem] = useState("metric");
+  const [selectedSystem, setSelectedSystem] = useState("metric");
 
   const handleSystemChange = (event) => {
-    setSelectedSystem((selectedSystem = event.target.value));
+    setSelectedSystem(event.target.value);
   };
 
   return (
@@ -34,20 +34,22 @@ function Hero() {
         <div className={styles.systemContainer}>
           <div className={styles.unitSystem}>
             <input
+              id="metricInput"
               type="radio"
               name="system"
               value="metric"
-              checked
-              onClick={handleSystemChange}
+              defaultChecked={true}
+              onChange={handleSystemChange}
             />
             <label className="body-m-bold">Metric</label>
           </div>
           <div className={styles.unitSystem}>
             <input
+              id="imperialInput"
               type="radio"
               name="system"
               value="imperial"
-              onClick={handleSystemChange}
+              onChange={handleSystemChange}
             />
             <label className="body-m-bold">Imperial</label>
           </div>
