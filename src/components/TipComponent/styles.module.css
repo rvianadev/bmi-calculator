@@ -1,0 +1,12 @@
+.componentContainer {
+  display: flex;
+  flex-direction: column;
+  width: 22.8125rem;
+  height: 14.625rem;
+
+  gap: 2.81rem;
+}
+.componentContainer img {
+  width: 4rem;
+  height: 4rem;
+}
