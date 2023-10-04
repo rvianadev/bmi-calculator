@@ -4,15 +4,10 @@
   margin: 0 auto 7.5rem auto;
   padding: 4.5rem 7.31rem 6rem 7.25rem;
 
-  border-radius: 2.1875rem;
-  opacity: 0.25;
-  background: linear-gradient(290deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%);
-}
-
-.tipsComponentsContainer {
-  width: 72.4375rem;
-  height: 14.625rem;
-
   display: flex;
   gap: 2rem;
+
+  border-radius: 2.1875rem;
+  /* opacity: 0.25; */
+  background: linear-gradient(290deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%);
 }

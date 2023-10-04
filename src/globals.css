@@ -47,6 +47,13 @@ input {
   letter-spacing: -0.15rem;
 }
 
+.heading-m {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.075rem;
+}
+
 .heading-s {
   font-size: 1.25rem;
   font-weight: 600;

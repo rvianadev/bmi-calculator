@@ -2,7 +2,6 @@ import DesktopContainer from "./components/DesktopContainer/index";
 import Hero from "./components/Hero/index";
 import YourResults from "./components/YourResults/index";
 import Tips from "./components/Tips/index";
-import TipComponent from "./components/TipComponent/index";
 
 import CurvedLineLeft from "./ui/CurvedLineLeft/index";
 
@@ -13,11 +12,7 @@ function App() {
     <DesktopContainer>
       <Hero></Hero>
       <YourResults></YourResults>
-      <Tips>
-        <TipComponent></TipComponent>
-        <TipComponent></TipComponent>
-        <TipComponent></TipComponent>
-      </Tips>
+      <Tips></Tips>
       <CurvedLineLeft />
     </DesktopContainer>
   );
