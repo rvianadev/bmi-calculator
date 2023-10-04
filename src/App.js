@@ -6,10 +6,6 @@ import TipComponent from "./components/TipComponent/index";
 
 import CurvedLineLeft from "./ui/CurvedLineLeft/index";
 
-import Eating from "./assets/images/icon-eating.svg";
-import Exercise from "./assets/images/icon-exercise.svg";
-import Sleep from "./assets/images/icon-sleep.svg";
-
 import "./globals.css";
 
 function App() {
@@ -18,15 +14,9 @@ function App() {
       <Hero></Hero>
       <YourResults></YourResults>
       <Tips>
-        <TipComponent>
-          <img src={Eating} alt="" />
-        </TipComponent>
-        <TipComponent>
-          <img src={Exercise} alt="" />
-        </TipComponent>
-        <TipComponent>
-          <img src={Sleep} alt="" />
-        </TipComponent>
+        <TipComponent></TipComponent>
+        <TipComponent></TipComponent>
+        <TipComponent></TipComponent>
       </Tips>
       <CurvedLineLeft />
     </DesktopContainer>
