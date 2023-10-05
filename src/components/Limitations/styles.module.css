@@ -2,4 +2,35 @@
   width: 72.5rem;
   height: 44rem;
   margin: 0 auto 7.5rem auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.limitationsTitleContent {
+  display: flex;
+  width: 35.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.1875rem;
+}
+
+.limitationsTopContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 6.19rem;
+  margin-bottom: 2rem;
+}
+
+.limitationsMiddleContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.limitationsBottomContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }

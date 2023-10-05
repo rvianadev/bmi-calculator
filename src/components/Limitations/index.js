@@ -34,12 +34,53 @@ function Limitations() {
 
   return (
     <section className={styles.limitationsContainer}>
-      <LimitationCard
-        image={Gender}
-        title={limitationProps[0].title}
-        text={limitationProps[0].text}
-      ></LimitationCard>
-      <LimitationCard></LimitationCard>
+      <div className={styles.limitationsTopContainer}>
+        <div className={styles.limitationsTitleContent}>
+          <h2 className="heading-l">Limitations of BMI</h2>
+          <p className="body-m">
+            Although BMI is often a practical indicator of healthy weight, it is
+            not suited for every person. Specific groups should carefully
+            consider their BMI outcomes, and in certain cases, the measurement
+            may not be beneficial to use.
+          </p>
+        </div>
+        <LimitationCard
+          id="gender"
+          image={Gender}
+          title={limitationProps[0].title}
+          text={limitationProps[0].text}
+        ></LimitationCard>
+      </div>
+
+      <div className={styles.limitationsMiddleContainer}>
+        <LimitationCard
+          id="age"
+          image={Age}
+          title={limitationProps[1].title}
+          text={limitationProps[1].text}
+        ></LimitationCard>
+        <LimitationCard
+          id="muscle"
+          image={Muscle}
+          title={limitationProps[2].title}
+          text={limitationProps[2].text}
+        ></LimitationCard>
+      </div>
+
+      <div className={styles.limitationsBottomContainer}>
+        <LimitationCard
+          id="pregnancy"
+          image={Pregnancy}
+          title={limitationProps[3].title}
+          text={limitationProps[3].text}
+        ></LimitationCard>
+        <LimitationCard
+          id="race"
+          image={Race}
+          title={limitationProps[4].title}
+          text={limitationProps[4].text}
+        ></LimitationCard>
+      </div>
     </section>
   );
 }

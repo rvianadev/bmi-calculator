@@ -5,6 +5,7 @@ import Tips from "./components/Tips/index";
 import Limitations from "./components/Limitations/index";
 
 import CurvedLineLeft from "./ui/CurvedLineLeft/index";
+import CurvedLineRight from "./ui/CurvedLineRight/index";
 
 import "./globals.css";
 
@@ -16,6 +17,7 @@ function App() {
       <Tips></Tips>
       <Limitations></Limitations>
       <CurvedLineLeft />
+      <CurvedLineRight />
     </DesktopContainer>
   );
 }

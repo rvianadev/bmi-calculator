@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 
 function LimitationCard(props) {
   return (
-    <div className={styles.cardContainer}>
+    <div className={styles.cardContainer} id={props.id}>
       <div className={styles.cardContent}>
         <div className={styles.titleContent}>
           <img src={props.image} alt="" />
