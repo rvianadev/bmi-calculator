@@ -1,11 +1,14 @@
 import styles from "./styles.module.css";
 
-function LimitationCard() {
+function LimitationCard(props) {
   return (
     <div className={styles.cardContainer}>
-      <div>
-        <div></div>
-        <p></p>
+      <div className={styles.cardContent}>
+        <div className={styles.titleContent}>
+          <img src={props.image} alt="" />
+          <h4 className="heading-s">{props.title}</h4>
+        </div>
+        <p className="body-m">{props.text}</p>
       </div>
     </div>
   );
