@@ -7,6 +7,17 @@ import image from "./assets/image.svg";
 function Hero() {
   const [selectedSystem, setSelectedSystem] = useState("metric");
 
+  const [height, setHeight] = useState(null);
+  const [weight, setWeight] = useState(null);
+
+  const handleHeightValue = (event) => {
+    setHeight(event.target.value);
+  };
+
+  const handleWeightValue = (event) => {
+    setWeight(event.target.value);
+  };
+
   const handleSystemChange = (event) => {
     setSelectedSystem(event.target.value);
   };
@@ -34,7 +45,6 @@ function Hero() {
         <div className={styles.systemContainer}>
           <div className={styles.unitSystem}>
             <input
-              id="metricInput"
               type="radio"
               name="system"
               value="metric"
@@ -45,7 +55,6 @@ function Hero() {
           </div>
           <div className={styles.unitSystem}>
             <input
-              id="imperialInput"
               type="radio"
               name="system"
               value="imperial"
@@ -60,14 +69,26 @@ function Hero() {
             <div className={styles.dataGroup}>
               <label>Height</label>
               <div className={styles.inputGroup}>
-                <input type="text" className="heading-m" placeholder="0" />
+                <input
+                  id="heightInput"
+                  type="text"
+                  className="heading-m"
+                  placeholder="0"
+                  onKeyUp={handleHeightValue}
+                />
                 <span>cm</span>
               </div>
             </div>
             <div className={styles.dataGroup}>
               <label>Weight</label>
               <div className={styles.inputGroup}>
-                <input type="text" className="heading-m" placeholder="0" />
+                <input
+                  id="weightInput"
+                  type="text"
+                  className="heading-m"
+                  placeholder="0"
+                  onKeyUp={handleWeightValue}
+                />
                 <span>kg</span>
               </div>
             </div>
