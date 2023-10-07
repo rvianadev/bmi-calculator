@@ -7,17 +7,24 @@ import image from "./assets/image.svg";
 function Hero() {
   const [selectedSystem, setSelectedSystem] = useState("metric");
 
-  const [height, setHeight] = useState(null);
-  const [weight, setWeight] = useState(null);
+  const [height, setHeight] = useState(100);
+  const [weight, setWeight] = useState(2);
+
+  const calculateBMI = () => {
+    const bmi = weight / (height / 100) ** 2;
+    return console.log(bmi);
+  };
 
   const handleHeightValue = (event) => {
-    setHeight(Number(event.target.value));
-    console.log("Altura: ", height);
+    const input = Number(event.target.value);
+    setHeight(input);
+    calculateBMI();
   };
 
   const handleWeightValue = (event) => {
-    setWeight(Number(event.target.value));
-    console.log(weight);
+    const input = Number(event.target.value);
+    setWeight(input);
+    calculateBMI();
   };
 
   const handleSystemChange = (event) => {
@@ -76,7 +83,7 @@ function Hero() {
                   type="number"
                   className="heading-m"
                   placeholder="0"
-                  onKeyUp={handleHeightValue}
+                  onChange={handleHeightValue}
                 />
                 <span>cm</span>
               </div>
@@ -89,7 +96,7 @@ function Hero() {
                   type="number"
                   className="heading-m"
                   placeholder="0"
-                  onKeyUp={handleWeightValue}
+                  onChange={handleWeightValue}
                 />
                 <span>kg</span>
               </div>

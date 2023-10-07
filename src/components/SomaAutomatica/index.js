@@ -21,12 +21,12 @@ const SomaAutomatica = () => {
     <div>
       <label>
         Valor 1:
-        <input type="number" value={valor1} onChange={handleValor1Change} />
+        <input type="number" onChange={handleValor1Change} />
       </label>
       <br />
       <label>
         Valor 2:
-        <input type="number" value={valor2} onChange={handleValor2Change} />
+        <input type="number" onChange={handleValor2Change} />
       </label>
       <br />
       <p>A soma é: {soma}</p>
