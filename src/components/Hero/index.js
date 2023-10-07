@@ -11,11 +11,13 @@ function Hero() {
   const [weight, setWeight] = useState(null);
 
   const handleHeightValue = (event) => {
-    setHeight(event.target.value);
+    setHeight(Number(event.target.value));
+    console.log("Altura: ", height);
   };
 
   const handleWeightValue = (event) => {
-    setWeight(event.target.value);
+    setWeight(Number(event.target.value));
+    console.log(weight);
   };
 
   const handleSystemChange = (event) => {
@@ -71,7 +73,7 @@ function Hero() {
               <div className={styles.inputGroup}>
                 <input
                   id="heightInput"
-                  type="text"
+                  type="number"
                   className="heading-m"
                   placeholder="0"
                   onKeyUp={handleHeightValue}
@@ -84,7 +86,7 @@ function Hero() {
               <div className={styles.inputGroup}>
                 <input
                   id="weightInput"
-                  type="text"
+                  type="number"
                   className="heading-m"
                   placeholder="0"
                   onKeyUp={handleWeightValue}
