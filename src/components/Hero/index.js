@@ -7,29 +7,32 @@ import image from "./assets/image.svg";
 function Hero() {
   const [selectedSystem, setSelectedSystem] = useState("metric");
 
-  const [height, setHeight] = useState(100);
-  const [weight, setWeight] = useState(2);
+  const [height, setHeight] = useState(null);
+  const [weight, setWeight] = useState(null);
+  let [bmi, setBMI] = useState(0);
 
-  const calculateBMI = () => {
-    const bmi = weight / (height / 100) ** 2;
-    return console.log(bmi);
+  const calculateBMI = (height, weight) => {
+    const bmi = (weight / Math.pow(height / 100, 2)).toFixed(1);
+    setBMI(bmi);
   };
 
   const handleHeightValue = (event) => {
-    const input = Number(event.target.value);
-    setHeight(input);
-    calculateBMI();
+    const height = Number(event.target.value);
+    setHeight(height);
+    calculateBMI(height, weight);
   };
 
   const handleWeightValue = (event) => {
-    const input = Number(event.target.value);
-    setWeight(input);
-    calculateBMI();
+    const weight = Number(event.target.value);
+    setWeight(weight);
+    calculateBMI(height, weight);
   };
 
   const handleSystemChange = (event) => {
     setSelectedSystem(event.target.value);
   };
+
+  console.log(bmi);
 
   return (
     <section className={styles.heroContainer}>
@@ -134,12 +137,16 @@ function Hero() {
         )}
 
         <div className={styles.resultContainer}>
-          <div className={styles.textResultContainer}>
-            <MediumHeading>Welcome!</MediumHeading>
-            <span>
-              Enter your height and weight and you’ll see your BMI result here
-            </span>
-          </div>
+          {height === null || weight === null ? (
+            <div className={styles.textResultContainer}>
+              <MediumHeading>Welcome!</MediumHeading>
+              <span>
+                Enter your height and weight and you’ll see your BMI result here
+              </span>
+            </div>
+          ) : (
+            <span>{bmi}</span>
+          )}
         </div>
       </div>
     </section>
