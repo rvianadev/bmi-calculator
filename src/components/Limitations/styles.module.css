@@ -21,12 +21,9 @@
   left: 0;
 }
 
-.limitationsCardsWrapperDesktop {
-}
-
-.limitationsCardsWrapperTablet {
+.limitationsCardsWrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 
   width: 60.0625rem;
   height: 44rem;

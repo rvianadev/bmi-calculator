@@ -43,32 +43,19 @@ function Limitations() {
         </p>
       </div>
 
-      {window.screen.width > 768 ? (
-        <div className={styles.limitationsCardsWrapperDesktop}>
-          <div className={styles.wrapperDesktopTop}>
+      <div className={styles.limitationsCardsWrapper}>
+        {limitationProps.map((value, index) => {
+          return (
             <LimitationCard
-              image={`/images/icon-${limitationProps[0].image}.svg`}
-              title={limitationProps[0].title}
-              text={limitationProps[0].text}
+              key={index}
+              id={value.image}
+              image={`/images/icon-${value.image}.svg`}
+              title={value.title}
+              text={value.text}
             />
-          </div>
-          <div className={styles.wrapperDesktopMiddle}></div>
-          <div className={styles.wrapperDesktopBottom}></div>
-        </div>
-      ) : (
-        <div className={styles.limitationsCardsWrapperTablet}>
-          {limitationProps.map((value, index) => {
-            return (
-              <LimitationCard
-                key={index}
-                image={`/images/icon-${value.image}.svg`}
-                title={value.title}
-                text={value.text}
-              />
-            );
-          })}
-        </div>
-      )}
+          );
+        })}
+      </div>
     </section>
   );
 }
