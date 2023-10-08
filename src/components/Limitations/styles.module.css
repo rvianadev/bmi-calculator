@@ -4,7 +4,9 @@
   margin: 0 auto 7.5rem auto;
 
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+
+  position: relative;
 }
 
 .limitationsTitleContent {
@@ -13,24 +15,20 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 2.1875rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.limitationsTopContainer {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 6.19rem;
-  margin-bottom: 2rem;
+.limitationsCardsWrapperDesktop {
 }
 
-.limitationsMiddleContainer {
+.limitationsCardsWrapperTablet {
   display: flex;
-  justify-content: flex-end;
-  gap: 2rem;
-  margin-bottom: 1.5rem;
-}
+  flex-direction: column;
 
-.limitationsBottomContainer {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  width: 60.0625rem;
+  height: 44rem;
+  flex-shrink: 0;
 }
