@@ -85,3 +85,13 @@ input {
   font-size: 0.875rem;
   font-weight: 400;
 }
+
+#gender {
+  margin-left: 31.06rem;
+  margin-bottom: 2rem;
+}
+
+#age {
+  margin-left: 12.44rem;
+  margin-right: 2rem;
+}
