@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 
 function TipCard(props) {
   return (
-    <div className={styles.cardContainer}>
+    <div className={styles.cardContainer} key={props.key}>
       <img src={props.image} alt="" />
       <div className={styles.textContainer}>
         <h3 className="heading-m">{props.title}</h3>

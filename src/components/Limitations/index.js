@@ -49,7 +49,7 @@ function Limitations() {
           image={Gender}
           title={limitationProps[0].title}
           text={limitationProps[0].text}
-        ></LimitationCard>
+        />
       </div>
 
       <div className={styles.limitationsMiddleContainer}>
@@ -58,13 +58,13 @@ function Limitations() {
           image={Age}
           title={limitationProps[1].title}
           text={limitationProps[1].text}
-        ></LimitationCard>
+        />
         <LimitationCard
           id="muscle"
           image={Muscle}
           title={limitationProps[2].title}
           text={limitationProps[2].text}
-        ></LimitationCard>
+        />
       </div>
 
       <div className={styles.limitationsBottomContainer}>
@@ -73,13 +73,13 @@ function Limitations() {
           image={Pregnancy}
           title={limitationProps[3].title}
           text={limitationProps[3].text}
-        ></LimitationCard>
+        />
         <LimitationCard
           id="race"
           image={Race}
           title={limitationProps[4].title}
           text={limitationProps[4].text}
-        ></LimitationCard>
+        />
       </div>
     </section>
   );

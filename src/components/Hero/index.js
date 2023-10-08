@@ -9,7 +9,7 @@ function Hero() {
 
   const [height, setHeight] = useState(null);
   const [weight, setWeight] = useState(null);
-  let [bmi, setBMI] = useState(0);
+  const [bmi, setBMI] = useState(0);
 
   const calculateBMI = (height, weight) => {
     const bmi = (weight / Math.pow(height / 100, 2)).toFixed(1);
