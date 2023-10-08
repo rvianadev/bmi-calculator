@@ -32,8 +32,6 @@ function Hero() {
     setSelectedSystem(event.target.value);
   };
 
-  console.log(bmi);
-
   return (
     <section className={styles.heroContainer}>
       <div className={styles.heroTitleContainer}>
