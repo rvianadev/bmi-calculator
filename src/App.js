@@ -7,8 +7,6 @@ import Limitations from "./components/Limitations/index";
 import CurvedLineLeft from "./ui/CurvedLineLeft/index";
 import CurvedLineRight from "./ui/CurvedLineRight/index";
 
-import SomaAutomatica from "./components/SomaAutomatica/index";
-
 import "./globals.css";
 
 function App() {
@@ -20,8 +18,6 @@ function App() {
       <Limitations></Limitations>
       <CurvedLineLeft />
       <CurvedLineRight />
-
-      <SomaAutomatica></SomaAutomatica>
     </DesktopContainer>
   );
 }
