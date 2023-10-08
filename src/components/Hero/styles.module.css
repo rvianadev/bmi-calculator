@@ -159,7 +159,6 @@
 .resultContainer {
   display: flex;
   padding: 2rem;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
@@ -172,6 +171,12 @@
 
 .textResultContainer {
   display: flex;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.textWelcomeContainer {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -179,9 +184,28 @@
   align-self: stretch;
 }
 
-.textResultContainer span {
+.textWelcomeContainer span {
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+
+.bmiResult {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 12.875rem;
+}
+
+.bmiResult h2,
+.bmiResult label,
+.bmiText p {
+  color: var(--pure-white);
+}
+
+.bmiText {
+  display: flex;
+  align-items: center;
+  width: 12.875rem;
 }

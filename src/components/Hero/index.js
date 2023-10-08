@@ -138,14 +138,25 @@ function Hero() {
 
         <div className={styles.resultContainer}>
           {height === null || weight === null ? (
-            <div className={styles.textResultContainer}>
+            <div className={styles.textWelcomeContainer}>
               <MediumHeading>Welcome!</MediumHeading>
               <span>
                 Enter your height and weight and you’ll see your BMI result here
               </span>
             </div>
           ) : (
-            <span>{bmi}</span>
+            <div className={styles.textResultContainer}>
+              <div className={styles.bmiResult}>
+                <label className="body-m-bold">Your BMI is...</label>
+                <h2 className="heading-xl">{bmi}</h2>
+              </div>
+              <div className={styles.bmiText}>
+                <p className="body-s">
+                  Your BMI suggests you’re a healthy weight. Your ideal weight
+                  is between <strong>63.3kgs - 85.2kgs</strong>.
+                </p>
+              </div>
+            </div>
           )}
         </div>
       </div>
