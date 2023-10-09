@@ -93,5 +93,14 @@ input {
 
 #age {
   margin-left: 12.44rem;
+  margin-right: 1.99rem;
+  margin-bottom: 1.5rem;
+}
+
+#muscle {
+  margin-bottom: 1.5rem;
+}
+
+#pregnancy {
   margin-right: 2rem;
 }
