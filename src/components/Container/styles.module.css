@@ -1,6 +1,12 @@
-.desktopContainer {
+.container {
   max-width: 90rem;
   margin: 0 auto;
   background: var(--pure-white);
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 48rem;
+  }
 }

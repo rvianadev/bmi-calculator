@@ -1,4 +1,4 @@
-import DesktopContainer from "./components/DesktopContainer/index";
+import Container from "./components/Container/index";
 import Hero from "./components/Hero/index";
 import YourResults from "./components/YourResults/index";
 import Tips from "./components/Tips/index";
@@ -11,14 +11,14 @@ import "./globals.css";
 
 function App() {
   return (
-    <DesktopContainer>
+    <Container>
       <Hero></Hero>
       <YourResults></YourResults>
       <Tips></Tips>
       <Limitations></Limitations>
       <CurvedLineLeft />
       <CurvedLineRight />
-    </DesktopContainer>
+    </Container>
   );
 }
 
