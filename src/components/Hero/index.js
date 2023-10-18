@@ -18,16 +18,17 @@ function Hero() {
   const [bmi, setBMI] = useState(0);
 
   const calculateBMIMetricSystem = (height, weight) => {
-    const bmi = (weight / Math.pow(height / 100, 2)).toFixed(1);
-    setBMI(bmi);
+    const bmiMetric = (weight / Math.pow(height / 100, 2)).toFixed(1);
+    setBMI(bmiMetric);
   };
 
   const calculateBMIImperialSystem = (foot, inch, stone, pound) => {
-    const bmi = (
+    const bmiImperial = (
       ((stone * 14 + pound) / Math.pow(foot * 12 + inch, 2)) *
       703
     ).toFixed(1);
-    setBMI(bmi);
+
+    setBMI(bmiImperial);
   };
 
   const handleHeightValue = (event) => {
@@ -42,15 +43,11 @@ function Hero() {
     calculateBMIMetricSystem(heightInCentimeter, weight);
   };
 
-  const handleSystemChange = (event) => {
-    setSelectedSystem(event.target.value);
-  };
-
   const handleHeightInFeetValue = (event) => {
-    const heightInFeet = Number(event.target.value);
-    setHeightInFeet(heightInFeet);
+    const heightFeet = Number(event.target.value);
+    setHeightInFeet(heightFeet);
     calculateBMIImperialSystem(
-      heightInFeet,
+      heightFeet,
       heightInInch,
       weightInStone,
       weightInPound
@@ -58,36 +55,40 @@ function Hero() {
   };
 
   const handleHeightInInchValue = (event) => {
-    const heightInInch = Number(event.target.value);
-    setHeightInInch(heightInInch);
+    const heightInch = Number(event.target.value);
+    setHeightInInch(heightInch);
     calculateBMIImperialSystem(
       heightInFeet,
-      heightInInch,
+      heightInch,
       weightInStone,
       weightInPound
     );
   };
 
   const handleWeightInStoneValue = (event) => {
-    const weightInStone = Number(event.target.value);
-    setWeightInStone(weightInStone);
+    const weightStone = Number(event.target.value);
+    setWeightInStone(weightStone);
     calculateBMIImperialSystem(
       heightInFeet,
       heightInInch,
-      weightInStone,
+      weightStone,
       weightInPound
     );
   };
 
   const handleWeightInPoundValue = (event) => {
-    const weightInPound = Number(event.target.value);
-    setWeightInPound(weightInPound);
+    const weightPound = Number(event.target.value);
+    setWeightInPound(weightPound);
     calculateBMIImperialSystem(
       heightInFeet,
       heightInInch,
       weightInStone,
-      weightInPound
+      weightPound
     );
+  };
+
+  const handleSystemChange = (event) => {
+    setSelectedSystem(event.target.value);
   };
 
   return (
