@@ -266,4 +266,9 @@
     left: 2.44rem;
     right: 2.69rem;
   }
+
+  .bmiResult,
+  .bmiText {
+    width: 50%;
+  }
 }
