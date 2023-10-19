@@ -11,3 +11,14 @@
 
   background-image: url("../../assets/images/tips-background.svg");
 }
+
+@media (max-width: 768px) {
+  .tipsContainer {
+    width: 48rem;
+    height: 31.4375rem;
+
+    flex-direction: column;
+    padding: 3.75rem 2.69rem 3.75rem 2.44rem;
+    gap: 2.5rem;
+  }
+}

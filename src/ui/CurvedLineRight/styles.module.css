@@ -3,3 +3,9 @@
   left: 19.06rem;
   top: 137.69rem;
 }
+
+@media (max-width: 768px) {
+  .curvedLineRight {
+    display: none;
+  }
+}

@@ -19,3 +19,32 @@
   gap: 2.1875rem;
   margin-top: 11.5rem;
 }
+
+@media (max-width: 768px) {
+  .yourResultsContainer {
+    width: 52.5625rem;
+    height: 25.69313rem;
+    margin-top: 17.31rem;
+    margin-left: -7.3rem;
+    margin-right: 2.69rem;
+    gap: 4.69rem;
+  }
+
+  .resultTextContainer {
+    display: flex;
+    align-self: center;
+    width: 20.6875rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: unset;
+  }
+
+  .resultTextContainer h2 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 2.2rem */
+    letter-spacing: -0.1rem;
+  }
+}
