@@ -35,12 +35,16 @@ function Hero() {
     const height = Number(event.target.value);
     setHeightInCentimeter(height);
     calculateBMIMetricSystem(height, weightInKilo);
+
+    console.log("Centimeter: ", heightInCentimeter);
   };
 
   const handleWeightValue = (event) => {
     const weight = Number(event.target.value);
     setWeightInKilo(weight);
     calculateBMIMetricSystem(heightInCentimeter, weight);
+
+    console.log("Kilogram: ", weightInKilo);
   };
 
   const handleHeightInFeetValue = (event) => {
@@ -52,6 +56,8 @@ function Hero() {
       weightInStone,
       weightInPound
     );
+
+    console.log("Feet: ", heightFeet);
   };
 
   const handleHeightInInchValue = (event) => {
@@ -63,6 +69,8 @@ function Hero() {
       weightInStone,
       weightInPound
     );
+
+    console.log("Inch: ", heightInInch);
   };
 
   const handleWeightInStoneValue = (event) => {
@@ -74,6 +82,8 @@ function Hero() {
       weightStone,
       weightInPound
     );
+
+    console.log("Stone: ", weightInStone);
   };
 
   const handleWeightInPoundValue = (event) => {
@@ -85,10 +95,20 @@ function Hero() {
       weightInStone,
       weightPound
     );
+
+    console.log("Pound: ", weightInPound);
   };
 
   const handleSystemChange = (event) => {
     setSelectedSystem(event.target.value);
+    const inputs = document.querySelectorAll('[type="number"]');
+
+    // Limpa os inputs quando troca de sistema
+    inputs.forEach((input) => {
+      input.value = null;
+    });
+
+    setBMI(0);
   };
 
   return (
@@ -166,7 +186,7 @@ function Hero() {
               <label>Height</label>
               <div className={styles.inputGroup}>
                 <input
-                  type="text"
+                  type="number"
                   className="heading-m"
                   placeholder="0"
                   onChange={handleHeightInFeetValue}
@@ -177,7 +197,7 @@ function Hero() {
             <div className={styles.dataGroup}>
               <div className={styles.inputGroup}>
                 <input
-                  type="text"
+                  type="number"
                   className="heading-m"
                   placeholder="0"
                   onChange={handleHeightInInchValue}
@@ -189,7 +209,7 @@ function Hero() {
               <label>Weight</label>
               <div className={styles.inputGroup}>
                 <input
-                  type="text"
+                  type="number"
                   className="heading-m"
                   placeholder="0"
                   onChange={handleWeightInStoneValue}
@@ -200,7 +220,7 @@ function Hero() {
             <div className={styles.dataGroup}>
               <div className={styles.inputGroup}>
                 <input
-                  type="text"
+                  type="number"
                   className="heading-m"
                   placeholder="0"
                   onChange={handleWeightInPoundValue}
@@ -212,7 +232,7 @@ function Hero() {
         )}
 
         <div className={styles.resultContainer}>
-          {heightInCentimeter === null || weightInKilo === null ? (
+          {bmi === 0 ? (
             <div className={styles.textWelcomeContainer}>
               <MediumHeading>Welcome!</MediumHeading>
               <span>
