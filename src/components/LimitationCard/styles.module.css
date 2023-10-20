@@ -29,3 +29,9 @@
 .titleContent h4 {
   align-self: center;
 }
+
+@media (max-width: 768px) {
+  .cardContainer {
+    width: 20.96875rem;
+  }
+}

@@ -104,3 +104,22 @@ input {
 #pregnancy {
   margin-right: 2rem;
 }
+
+@media (max-width: 768px) {
+  #gender,
+  #age,
+  #muscle,
+  #pregnancy {
+    margin: unset;
+    margin-bottom: 1.5rem;
+  }
+
+  #gender,
+  #muscle {
+    margin-right: 0.94rem;
+  }
+
+  #race {
+    width: 22.8125rem;
+  }
+}

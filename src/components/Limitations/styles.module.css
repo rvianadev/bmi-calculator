@@ -1,6 +1,6 @@
 .limitationsContainer {
   width: 72.5rem;
-  height: 44rem;
+
   margin: 0 auto 7.5rem auto;
 
   display: flex;
@@ -26,6 +26,26 @@
   flex-wrap: wrap;
 
   width: 60.0625rem;
-  height: 44rem;
-  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .limitationsContainer {
+    flex-direction: column;
+    align-items: center;
+
+    position: static;
+    max-width: 100%;
+
+    padding-left: 2.44rem;
+  }
+
+  .limitationsTitleContent {
+    position: static;
+  }
+
+  .limitationsCardsWrapper {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
 }
