@@ -272,3 +272,17 @@
     width: 50%;
   }
 }
+
+@media (max-width: 375px) {
+  .heroContainer h1 {
+    max-width: 10ch;
+  }
+
+  .heroTitleContainer {
+    row-gap: 1.5rem;
+  }
+
+  .heroContents p {
+    max-width: 20.4375rem;
+  }
+}

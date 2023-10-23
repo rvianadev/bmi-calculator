@@ -162,6 +162,7 @@ function Hero() {
                   type="number"
                   className="heading-m"
                   placeholder="0"
+                  maxLength={3}
                   onChange={handleHeightValue}
                 />
                 <span>cm</span>
@@ -174,6 +175,7 @@ function Hero() {
                   type="number"
                   className="heading-m"
                   placeholder="0"
+                  maxLength={3}
                   onChange={handleWeightValue}
                 />
                 <span>kg</span>
@@ -189,6 +191,7 @@ function Hero() {
                   type="number"
                   className="heading-m"
                   placeholder="0"
+                  maxLength={2}
                   onChange={handleHeightInFeetValue}
                 />
                 <span>ft</span>
@@ -200,6 +203,7 @@ function Hero() {
                   type="number"
                   className="heading-m"
                   placeholder="0"
+                  maxLength={2}
                   onChange={handleHeightInInchValue}
                 />
                 <span>in</span>
@@ -212,6 +216,7 @@ function Hero() {
                   type="number"
                   className="heading-m"
                   placeholder="0"
+                  maxLength={2}
                   onChange={handleWeightInStoneValue}
                 />
                 <span>st</span>
@@ -223,6 +228,7 @@ function Hero() {
                   type="number"
                   className="heading-m"
                   placeholder="0"
+                  maxLength={2}
                   onChange={handleWeightInPoundValue}
                 />
                 <span>lbs</span>
