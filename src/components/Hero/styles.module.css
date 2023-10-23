@@ -285,4 +285,36 @@
   .heroContents p {
     max-width: 20.4375rem;
   }
+
+  .detailsContainer {
+    top: 29.44rem;
+    left: unset;
+    right: unset;
+
+    width: 20.5rem;
+    padding: 1.5rem;
+  }
+
+  .metricDataContainer {
+    flex-direction: column;
+  }
+
+  .dataGroup {
+    width: 100%;
+  }
+
+  .resultContainer {
+    flex-direction: column;
+
+    border-radius: 1rem;
+    background: linear-gradient(90deg, #345ff6 0%, #587dff 100%);
+  }
+
+  .textResultContainer {
+    flex-direction: column;
+  }
+
+  .bmiText {
+    width: 100%;
+  }
 }
