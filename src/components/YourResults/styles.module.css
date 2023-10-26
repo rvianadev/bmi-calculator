@@ -48,3 +48,16 @@
     letter-spacing: -0.1rem;
   }
 }
+
+@media (max-width: 375px) {
+  .yourResultsContainer {
+    flex-direction: column;
+    margin-left: unset;
+    margin-right: unset;
+  }
+
+  .yourResultsContainer img {
+    max-width: 100vw;
+    margin-top: 14.2rem;
+  }
+}
