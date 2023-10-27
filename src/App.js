@@ -12,10 +12,10 @@ import "./globals.css";
 function App() {
   return (
     <Container>
-      <Hero></Hero>
-      <YourResults></YourResults>
-      <Tips></Tips>
-      <Limitations></Limitations>
+      <Hero />
+      <YourResults />
+      <Tips />
+      {/* <Limitations /> */}
       <CurvedLineLeft />
       <CurvedLineRight />
     </Container>

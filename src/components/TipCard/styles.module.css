@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 22.8125rem;
-  height: 14.625rem;
+  /* height: 14.625rem; */
 
   gap: 2.81rem;
 }
@@ -24,5 +24,13 @@
     width: 100%;
 
     gap: 2.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .cardContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100vw;
   }
 }
