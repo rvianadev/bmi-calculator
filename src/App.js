@@ -15,7 +15,7 @@ function App() {
       <Hero />
       <YourResults />
       <Tips />
-      {/* <Limitations /> */}
+      <Limitations />
       <CurvedLineLeft />
       <CurvedLineRight />
     </Container>

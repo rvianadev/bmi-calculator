@@ -35,3 +35,11 @@
     width: 20.96875rem;
   }
 }
+
+@media (max-width: 375px) {
+  .cardContainer {
+    width: unset;
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+}

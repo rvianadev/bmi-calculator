@@ -124,3 +124,18 @@ input {
     margin-left: 11.5rem;
   }
 }
+
+@media (max-width: 375px) {
+  #gender,
+  #age,
+  #muscle,
+  #pregnancy,
+  #race {
+    margin: unset;
+  }
+
+  #race {
+    width: unset;
+    max-width: 100%;
+  }
+}
