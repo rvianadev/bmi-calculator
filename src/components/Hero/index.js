@@ -35,7 +35,7 @@ function Hero() {
     const height = Number(event.target.value);
     setHeightInCentimeter(height);
 
-    if (event.target.value !== 0 && weightInKilo !== 0) {
+    if (event.target.value !== "" && weightInKilo !== 0) {
       calculateBMIMetricSystem(height, weightInKilo);
     } else {
       setBMI(0);
@@ -46,7 +46,7 @@ function Hero() {
     const weight = Number(event.target.value);
     setWeightInKilo(weight);
 
-    if (event.target.value !== 0 && heightInCentimeter !== 0) {
+    if (event.target.value !== "" && heightInCentimeter !== 0) {
       calculateBMIMetricSystem(heightInCentimeter, weight);
     } else {
       setBMI(0);
@@ -57,7 +57,12 @@ function Hero() {
     const heightFeet = Number(event.target.value);
     setHeightInFeet(heightFeet);
 
-    if (event.target.value !== "") {
+    if (
+      event.target.value !== "" &&
+      heightInInch !== 0 &&
+      weightInStone !== 0 &&
+      weightInPound !== 0
+    ) {
       calculateBMIImperialSystem(
         heightFeet,
         heightInInch,
@@ -73,7 +78,12 @@ function Hero() {
     const heightInch = Number(event.target.value);
     setHeightInInch(heightInch);
 
-    if (event.target.value !== "") {
+    if (
+      event.target.value !== "" &&
+      heightInFeet !== 0 &&
+      weightInStone !== 0 &&
+      weightInPound !== 0
+    ) {
       calculateBMIImperialSystem(
         heightInFeet,
         heightInch,
@@ -89,7 +99,12 @@ function Hero() {
     const weightStone = Number(event.target.value);
     setWeightInStone(weightStone);
 
-    if (event.target.value !== "") {
+    if (
+      event.target.value !== "" &&
+      heightInFeet !== 0 &&
+      heightInInch !== 0 &&
+      weightInPound !== 0
+    ) {
       calculateBMIImperialSystem(
         heightInFeet,
         heightInInch,
@@ -105,7 +120,12 @@ function Hero() {
     const weightPound = Number(event.target.value);
     setWeightInPound(weightPound);
 
-    if (event.target.value !== "") {
+    if (
+      event.target.value !== "" &&
+      heightInFeet !== 0 &&
+      heightInInch !== 0 &&
+      weightInStone !== 0
+    ) {
       calculateBMIImperialSystem(
         heightInFeet,
         heightInInch,
