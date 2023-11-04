@@ -7,13 +7,13 @@ import image from "./assets/image.svg";
 function Hero() {
   const [selectedSystem, setSelectedSystem] = useState("metric");
 
-  const [heightInCentimeter, setHeightInCentimeter] = useState(null);
-  const [weightInKilo, setWeightInKilo] = useState(null);
+  const [heightInCentimeter, setHeightInCentimeter] = useState(0);
+  const [weightInKilo, setWeightInKilo] = useState(0);
 
-  const [heightInFeet, setHeightInFeet] = useState(null);
-  const [heightInInch, setHeightInInch] = useState(null);
-  const [weightInStone, setWeightInStone] = useState(null);
-  const [weightInPound, setWeightInPound] = useState(null);
+  const [heightInFeet, setHeightInFeet] = useState(0);
+  const [heightInInch, setHeightInInch] = useState(0);
+  const [weightInStone, setWeightInStone] = useState(0);
+  const [weightInPound, setWeightInPound] = useState(0);
 
   const [bmi, setBMI] = useState(0);
 
@@ -34,69 +34,87 @@ function Hero() {
   const handleHeightValue = (event) => {
     const height = Number(event.target.value);
     setHeightInCentimeter(height);
-    calculateBMIMetricSystem(height, weightInKilo);
 
-    console.log("Centimeter: ", heightInCentimeter);
+    if (event.target.value !== 0 && weightInKilo !== 0) {
+      calculateBMIMetricSystem(height, weightInKilo);
+    } else {
+      setBMI(0);
+    }
   };
 
   const handleWeightValue = (event) => {
     const weight = Number(event.target.value);
     setWeightInKilo(weight);
-    calculateBMIMetricSystem(heightInCentimeter, weight);
 
-    console.log("Kilogram: ", weightInKilo);
+    if (event.target.value !== 0 && heightInCentimeter !== 0) {
+      calculateBMIMetricSystem(heightInCentimeter, weight);
+    } else {
+      setBMI(0);
+    }
   };
 
   const handleHeightInFeetValue = (event) => {
     const heightFeet = Number(event.target.value);
     setHeightInFeet(heightFeet);
-    calculateBMIImperialSystem(
-      heightFeet,
-      heightInInch,
-      weightInStone,
-      weightInPound
-    );
 
-    console.log("Feet: ", heightFeet);
+    if (event.target.value !== "") {
+      calculateBMIImperialSystem(
+        heightFeet,
+        heightInInch,
+        weightInStone,
+        weightInPound
+      );
+    } else {
+      setBMI(0);
+    }
   };
 
   const handleHeightInInchValue = (event) => {
     const heightInch = Number(event.target.value);
     setHeightInInch(heightInch);
-    calculateBMIImperialSystem(
-      heightInFeet,
-      heightInch,
-      weightInStone,
-      weightInPound
-    );
 
-    console.log("Inch: ", heightInInch);
+    if (event.target.value !== "") {
+      calculateBMIImperialSystem(
+        heightInFeet,
+        heightInch,
+        weightInStone,
+        weightInPound
+      );
+    } else {
+      setBMI(0);
+    }
   };
 
   const handleWeightInStoneValue = (event) => {
     const weightStone = Number(event.target.value);
     setWeightInStone(weightStone);
-    calculateBMIImperialSystem(
-      heightInFeet,
-      heightInInch,
-      weightStone,
-      weightInPound
-    );
 
-    console.log("Stone: ", weightInStone);
+    if (event.target.value !== "") {
+      calculateBMIImperialSystem(
+        heightInFeet,
+        heightInInch,
+        weightStone,
+        weightInPound
+      );
+    } else {
+      setBMI(0);
+    }
   };
 
   const handleWeightInPoundValue = (event) => {
     const weightPound = Number(event.target.value);
     setWeightInPound(weightPound);
-    calculateBMIImperialSystem(
-      heightInFeet,
-      heightInInch,
-      weightInStone,
-      weightPound
-    );
 
-    console.log("Pound: ", weightInPound);
+    if (event.target.value !== "") {
+      calculateBMIImperialSystem(
+        heightInFeet,
+        heightInInch,
+        weightInStone,
+        weightPound
+      );
+    } else {
+      setBMI(0);
+    }
   };
 
   const handleSystemChange = (event) => {
