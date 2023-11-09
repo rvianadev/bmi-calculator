@@ -23,16 +23,18 @@ function Tips() {
 
   return (
     <section className={styles.tipsContainer}>
-      {tipProps.map((value, index) => {
-        return (
-          <TipCard
-            image={`/images/icon-${value.image}.svg`}
-            title={value.title}
-            text={value.text}
-            key={index}
-          />
-        );
-      })}
+      <div className={styles.tipsWrapper}>
+        {tipProps.map((value, index) => {
+          return (
+            <TipCard
+              image={`/images/icon-${value.image}.svg`}
+              title={value.title}
+              text={value.text}
+              key={index}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 }
