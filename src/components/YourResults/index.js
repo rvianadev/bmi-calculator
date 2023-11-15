@@ -4,7 +4,9 @@ import image from "./assets/image-man-eating.webp";
 function YourResults() {
   return (
     <section className={styles.yourResultsContainer}>
-      <img src={image} alt="" />
+      <div className={styles.yourResultsContainer__img}>
+        <img src={image} alt="" />
+      </div>
       <div className={styles.resultTextContainer}>
         <h2 className="heading-l">What your BMI result means</h2>
         <p className="body-m">

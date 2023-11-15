@@ -1,23 +1,27 @@
 .yourResultsContainer {
   display: flex;
-  justify-content: space-between;
 
-  width: 72.5rem;
-  height: 33.3125rem;
-  margin: 4.06rem auto 6rem auto;
+  width: 80.56%;
+  margin: 0 auto;
 }
 
-.yourResultsContainer img {
-  max-width: 35.25rem;
+.yourResultsContainer__img {
+  max-width: 50%;
 }
 
 .resultTextContainer {
   display: flex;
-  width: 29.0625rem;
+  max-width: 50%;
   flex-direction: column;
   align-items: flex-start;
   gap: 2.1875rem;
-  margin-top: 11.5rem;
+
+  align-self: center;
+  padding-left: 8rem;
+}
+
+.yourResultsContainer__img img {
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {
