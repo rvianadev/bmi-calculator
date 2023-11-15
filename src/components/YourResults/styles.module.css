@@ -3,21 +3,22 @@
 
   width: 80.56%;
   margin: 0 auto;
+  margin-top: 4.06rem;
 }
 
 .yourResultsContainer__img {
-  max-width: 50%;
+  max-width: 48.62%;
 }
 
 .resultTextContainer {
   display: flex;
-  max-width: 50%;
+  max-width: 51.38%;
   flex-direction: column;
   align-items: flex-start;
   gap: 2.1875rem;
 
-  align-self: center;
   padding-left: 8rem;
+  padding-top: 11.5rem;
 }
 
 .yourResultsContainer__img img {

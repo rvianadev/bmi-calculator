@@ -1,12 +1,18 @@
 .tipsContainer {
+  width: 96.67%;
+  max-width: 87rem;
+  margin: 0 auto;
+
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+
   border-radius: 2.1875rem;
   background-image: url("../../assets/images/tips-background.svg");
-  padding-top: 4.5rem;
-  padding-bottom: 6rem;
+  background-repeat: no-repeat;
 }
 
 .tipsWrapper {
-  width: 96.5%;
+  max-width: 72.4375rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
