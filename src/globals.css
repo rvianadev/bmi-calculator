@@ -37,7 +37,7 @@ input {
 }
 
 .heading-xl {
-  font-size: 4rem;
+  font-size: clamp(3rem, 3rem + 1vw, 4rem);
   font-weight: 600;
   letter-spacing: -0.2rem;
 }

@@ -1,6 +1,5 @@
 import Container from "./components/Container/index";
-// import Hero from "./components/Hero/index";
-import Hero2 from "./components/Hero2/index";
+import Hero from "./components/Hero/index";
 import YourResults from "./components/YourResults/index";
 import Tips from "./components/Tips/index";
 import Limitations from "./components/Limitations/index";
@@ -13,7 +12,7 @@ import "./globals.css";
 function App() {
   return (
     <Container>
-      <Hero2 />
+      <Hero />
       <YourResults />
       <Tips />
       <Limitations />
