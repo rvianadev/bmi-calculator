@@ -254,9 +254,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2.5rem;
+
+    background-image: url("./assets/hero_background_tablet.svg");
+    background-repeat: no-repeat;
 
     width: 100%;
     margin: 0;
+    padding-top: 0;
   }
 
   .heroTitleContainer {
@@ -278,7 +283,8 @@
 
   .heroContents {
     align-items: center;
-    width: 42.875rem;
+    width: 89.32%;
+    max-width: 42.875rem;
     gap: 1.5rem;
   }
 
@@ -298,10 +304,10 @@
   }
 
   .detailsContainer {
-    width: 42.875rem;
-    top: 22.12rem;
-    left: 2.44rem;
-    right: 2.69rem;
+    width: 89.32%;
+    max-width: 42.875rem;
+    margin-top: 0;
+    align-self: center;
   }
 
   .bmiResult,
@@ -310,7 +316,21 @@
   }
 }
 
+@media (max-width: 500px) {
+  .detailsContainer {
+    width: 87.2%;
+    padding: 1.5rem;
+
+    min-width: unset;
+  }
+}
+
 @media (max-width: 375px) {
+  .heroContainer {
+    background-image: url("./assets/hero_background_mobile.svg");
+    background-repeat: no-repeat;
+  }
+
   .heroContainer h1 {
     max-width: 10ch;
   }
@@ -321,15 +341,6 @@
 
   .heroContents p {
     max-width: 20.4375rem;
-  }
-
-  .detailsContainer {
-    top: 29.44rem;
-    left: unset;
-    right: unset;
-
-    width: 20.5rem;
-    padding: 1.5rem;
   }
 
   .metricDataContainer {

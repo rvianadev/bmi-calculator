@@ -21,10 +21,6 @@
   padding-top: 11.5rem;
 }
 
-.yourResultsContainer__img img {
-  max-width: 100%;
-}
-
 @media (max-width: 768px) {
   .yourResultsContainer {
     width: 52.5625rem;

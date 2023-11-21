@@ -16,6 +16,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 body,
 h1,
 h2,
