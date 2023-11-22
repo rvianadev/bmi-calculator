@@ -365,4 +365,8 @@
   .bmiText {
     width: 100%;
   }
+
+  .inputGroup {
+    gap: 0.5rem;
+  }
 }
