@@ -6,6 +6,12 @@
   position: relative;
 }
 
+@media (max-width: 1400px) {
+  .container {
+    width: 95%;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     width: 100vw;

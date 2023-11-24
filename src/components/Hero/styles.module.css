@@ -1,6 +1,7 @@
 .heroContainer {
   display: flex;
-  gap: 8rem;
+  /* gap: 8rem; */
+  justify-content: space-between;
 
   width: 88.61%;
   max-width: 79.75rem;
@@ -16,6 +17,8 @@
 }
 
 .heroTitleContainer {
+  width: 46%;
+
   display: flex;
   flex-direction: column;
   padding-left: 7.25rem;
@@ -49,8 +52,9 @@
 .detailsContainer {
   display: flex;
 
-  min-width: 25rem;
-  max-width: 35.25rem;
+  /* min-width: 25rem; */
+  /* max-width: 35.25rem; */
+  width: 43%;
   margin-top: 10rem;
   align-self: flex-start;
   z-index: 1;
@@ -125,7 +129,6 @@
   display: flex;
   padding: 1.25rem 1.5rem;
   align-items: flex-start;
-  gap: 1.5rem;
   align-self: stretch;
   justify-content: space-between;
 
@@ -149,7 +152,7 @@
 }
 
 .inputGroup input {
-  width: 100%;
+  width: 40%;
   border: none;
 }
 
@@ -162,7 +165,9 @@
 }
 
 .inputGroup span {
+  width: 35%;
   color: var(--blue);
+  text-align: right;
 }
 
 .resultContainer {
@@ -242,9 +247,15 @@
   }
 }
 
-@media (max-width: 950px) {
-  .heroContainer {
-    gap: 5rem;
+@media (max-width: 990px) {
+  .inputGroup input {
+    width: 45%;
+  }
+}
+
+@media (max-width: 940px) {
+  .detailsContainer {
+    width: 50%;
   }
 }
 
@@ -254,7 +265,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2.5rem;
 
     background-image: url("./assets/hero_background_tablet.svg");
     background-repeat: no-repeat;
@@ -341,6 +351,10 @@
 
   .heroContents p {
     max-width: 20.4375rem;
+  }
+
+  .detailsContainer {
+    margin-top: 3rem;
   }
 
   .metricDataContainer {
