@@ -55,18 +55,19 @@
     flex-direction: column;
     margin-left: unset;
     margin-right: unset;
+    margin-top: 0;
     gap: 3rem;
+
+    width: 100%;
   }
 
-  .yourResultsContainer img {
-    max-width: 100vw;
-    margin-top: 14.2rem;
+  .yourResultsContainer__img {
+    max-width: 100%;
   }
 
   .resultTextContainer {
-    width: 100vw;
-    align-self: unset;
-    padding-left: 1.5rem;
-    padding-right: 1.44rem;
+    max-width: 87%;
+    margin: 0 auto;
+    padding: unset;
   }
 }
