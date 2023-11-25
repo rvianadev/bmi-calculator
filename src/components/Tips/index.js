@@ -23,6 +23,7 @@ function Tips() {
 
   return (
     <section className={styles.tipsContainer}>
+      <div className={styles.tipsContainerBackground}></div>
       <div className={styles.tipsWrapper}>
         {tipProps.map((value, index) => {
           return (
