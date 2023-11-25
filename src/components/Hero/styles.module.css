@@ -265,6 +265,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2.5rem;
 
     background-image: url("./assets/hero_background_tablet.svg");
     background-repeat: no-repeat;
