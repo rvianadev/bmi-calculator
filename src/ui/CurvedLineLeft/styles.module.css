@@ -1,10 +1,10 @@
 .curvedLineLeft {
   position: absolute;
-  top: 46.81rem;
-  right: 10.44rem;
+  top: 47.81rem;
+  right: 11.44rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1600px) {
   .curvedLineLeft {
     display: none;
   }
