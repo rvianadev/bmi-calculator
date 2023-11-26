@@ -39,7 +39,9 @@
 @media (max-width: 375px) {
   .cardContainer {
     width: unset;
-    max-width: 100%;
+    max-width: 89%;
     padding: 1.5rem;
+
+    align-self: center;
   }
 }

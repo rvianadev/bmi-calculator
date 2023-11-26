@@ -137,9 +137,4 @@ input {
   #race {
     margin: unset;
   }
-
-  #race {
-    width: unset;
-    max-width: 100%;
-  }
 }

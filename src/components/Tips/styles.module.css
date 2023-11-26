@@ -35,6 +35,9 @@
 @media (max-width: 1000px) {
   .tipsContainer {
     width: 100vw;
+
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
   }
 
   .tipsWrapper {
@@ -49,21 +52,19 @@
 @media (max-width: 768px) {
   .tipsContainer {
     max-width: 48rem;
-    /* height: 31.4375rem; */
 
     flex-direction: column;
-    padding: 3.75rem 2.69rem 3.75rem 2.44rem;
+
     gap: 2.5rem;
+  }
+
+  .tipsWrapper {
+    width: 90%;
   }
 }
 
 @media (max-width: 375px) {
   .tipsContainer {
     max-width: 100vw;
-    padding: unset;
-    padding-left: 1.19rem;
-    padding-right: 1.81rem;
-    padding-top: 35rem;
-    margin-bottom: 4.5rem;
   }
 }
