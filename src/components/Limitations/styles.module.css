@@ -11,7 +11,7 @@
 
 .limitationsTitleContent {
   display: flex;
-  width: 35.25rem;
+  max-width: 35.25rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 2.1875rem;
@@ -22,8 +22,7 @@
 }
 
 .limitationsCardsWrapper {
-  /* display: flex; */
-  display: none;
+  display: flex;
   flex-wrap: wrap;
 
   width: 60.0625rem;
@@ -32,12 +31,23 @@
 @media (max-width: 1080px) {
   .limitationsContainer {
     justify-content: center;
+
+    width: 89.31%;
   }
 
   .limitationsTitleContent {
     position: static;
 
-    width: 83%;
+    width: 90%;
+    max-width: unset;
+
+    text-align: center;
+  }
+
+  .limitationsTitleContent h2 {
+    margin: 0 auto;
+
+    font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
   }
 }
 
@@ -49,7 +59,7 @@
     position: static;
     max-width: 100%;
 
-    padding-left: 2.44rem;
+    /* padding-left: 2.44rem; */
   }
 
   .limitationsTitleContent {
@@ -59,6 +69,12 @@
   .limitationsCardsWrapper {
     width: 100%;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .limitationsTitleContent {
+    width: 100%;
   }
 }
 
@@ -72,7 +88,7 @@
   }
 
   .limitationsTitleContent {
-    max-width: 89%;
+    /* max-width: 89%; */
     align-items: center;
     gap: 2rem;
   }
