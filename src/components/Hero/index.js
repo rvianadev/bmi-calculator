@@ -151,6 +151,7 @@ function Hero() {
 
   return (
     <section className={styles.heroContainer}>
+      <div className={styles.heroContainerBackground}></div>
       <div className={styles.heroTitleContainer}>
         <img src={image} alt="Imagem" />
         <div className={styles.heroContents}>
