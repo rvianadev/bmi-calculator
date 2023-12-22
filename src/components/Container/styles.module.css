@@ -4,8 +4,6 @@
   margin: 0 auto;
   background: var(--pure-white);
   position: relative;
-
-  /* background: cornflowerblue; */
 }
 
 @media (max-width: 1400px) {
